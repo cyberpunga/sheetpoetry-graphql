@@ -1,0 +1,18 @@
+{
+  "name": "sheetpoetry-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.6.6",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "googleapis": "^40.0.0",
+    "graphql": "^14.3.1",
+    "lodash.random": "^3.2.0",
+    "lodash.times": "^4.3.2"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  }
+}
