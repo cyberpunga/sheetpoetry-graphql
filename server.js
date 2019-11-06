@@ -1,6 +1,6 @@
 const cors = require("micro-cors")();
 const { ApolloServer, gql } = require("apollo-server-micro");
-const sheetpoetry = require("./sheetpoetry");
+const sheetpoetry = require("./src");
 
 const typeDefs = gql`
   type Query {
