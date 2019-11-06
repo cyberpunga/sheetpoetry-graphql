@@ -1,7 +1,7 @@
 {
   "name": "sheetpoetry-graphql",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "dependencies": {
     "apollo-server-micro": "^2.6.7",
