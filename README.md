@@ -2,6 +2,14 @@
 
 This is a GraphQL API to generate _poems_ from randomly selected cells on a Google spreadsheet. Try it live [here](https://sheetpoetry.now.sh).
 
+## Usage
+
+The API takes a query called `sheetpoem` with 3 arguments:
+
+- `spreadsheetId` (String): The spreadsheet's ID.
+- `range` (String): The range of cells.
+- `verses` (Int): The number of verses.
+
 ## Example
 
 Just copy the sample query shown below (for this example we are using [this spreadsheet](https://docs.google.com/spreadsheets/d/1qjgDw3TREpqQoSSbB0tzd0Joues1jraJix2mU52zToU) with "1000 chilean verses" selected by Felipe Cussen and Marcela Labraña).
