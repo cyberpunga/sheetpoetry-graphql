@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [{ "src": "server.js", "use": "@now/node" }],
+  "routes": [{ "src": "/.*", "dest": "server.js" }],
+  "env": {
+    "GOOGLE_PRIVATE_KEY": "@google_private_key",
+    "GOOGLE_CLIENT_EMAIL": "@google_client_email"
+  }
+}
