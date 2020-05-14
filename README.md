@@ -2,6 +2,8 @@
 
 This is a GraphQL API to generate _poems_ from randomly selected cells on a Google spreadsheet. Try it live [here](https://sheetpoetry.now.sh).
 
+***Puedes leer esto en español [aquí](https://github.com/cyberpunga/sheetpoetry-graphql/blob/master/LEAME.md)***.
+
 ## Usage
 
 The API takes a query called `sheetpoem` with 3 arguments:
