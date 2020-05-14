@@ -4,7 +4,7 @@ This is a GraphQL API to generate _poems_ from randomly selected cells on a Goog
 
 ## Example
 
-Just copy the sample query shown below (for this example we are using [this spreadsheet](https://docs.google.com/spreadsheets/d/1qjgDw3TREpqQoSSbB0tzd0Joues1jraJix2mU52zToU)).
+Just copy the sample query shown below (for this example we are using [this spreadsheet](https://docs.google.com/spreadsheets/d/1qjgDw3TREpqQoSSbB0tzd0Joues1jraJix2mU52zToU) with "1000 chilean verses" selected by Felipe Cussen and Marcela Labraña).
 
 ```graphql
 {
