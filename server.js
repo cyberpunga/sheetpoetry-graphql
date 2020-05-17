@@ -11,15 +11,19 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     sheetpoem: async (root, { spreadsheetId, range, verses }, context) =>
-      await sheetpoetry(spreadsheetId, range, verses || 1)
-  }
+      await sheetpoetry(spreadsheetId, range, verses || 1),
+  },
 };
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   introspection: true,
-  playground: true
+  playground: true,
 });
 
-module.exports = cors(server.createHandler());
+const handler = server.createHandler();
+
+module.exports = cors((req, res) =>
+  req.method === "OPTIONS" ? res.end() : handler(req, res)
+);
