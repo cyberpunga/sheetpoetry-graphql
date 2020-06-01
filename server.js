@@ -1,6 +1,6 @@
 const cors = require("micro-cors")();
 const { ApolloServer, gql } = require("apollo-server-micro");
-const sheetpoetry = require("./src");
+const { sheetPoetry } = require("./src");
 
 const typeDefs = gql`
   type Query {
@@ -11,7 +11,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     sheetpoem: async (root, { spreadsheetId, range, verses }, context) =>
-      await sheetpoetry(spreadsheetId, range, verses || 1),
+      await sheetPoetry(spreadsheetId, range, verses || 1),
   },
 };
 
