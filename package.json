@@ -4,7 +4,7 @@
   "main": "server.js",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-micro": "^2.13.1",
+    "apollo-server-micro": "^2.14.2",
     "googleapis": "^51.0.0",
     "graphql": "^15.0.0",
     "micro-cors": "^0.1.1"
